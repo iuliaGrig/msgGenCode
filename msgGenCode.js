@@ -33,7 +33,7 @@ let generateMsg = type => {
 
     const msg = getRandMsg(msgArr);
  
-    const descElement = document.querySelector(`${type}`).querySelector(`.desc`);
+    const descElement = document.querySelector(`${type} .desc`);
     descElement.textContent = msg;
 }
 
