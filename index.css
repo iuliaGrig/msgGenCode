@@ -6,3 +6,7 @@ button {
     display: inline-block;
     cursor: pointer;
 }
+
+.desc {
+    border: solid 1px #152340;
+}
