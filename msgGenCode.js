@@ -16,23 +16,40 @@ let generateMsg = type => {
     let msgArr;
 
     switch(type) {
-        case 'grounding-technique':
+        case 'ground-technique':
             msgArr = groundTechnique;
             break;
-        case 'motivational-words':
+        case 'motivation':
             msgArr = motivationWords;
             break;
         case 'distractions':
             msgArr = distract;
             break;
         default:
-            // alert("Please specify a valid message type: grounding technique, motivational words or distractions")
             console.log("Please specify a valid message type: grounding technique, motivational words or distractions")
             return;
     }
+
+    const msg = getRandMsg(msgArr);
+
+    const descElement = document.querySelector(`${type} .desc`);
+    descElement.textContent = msg;
 }
 
-/*
-generateMsg('grounding technique');
-generateMsg('motivational words');
-*/
+document.addEventListener('DOMContentLoaded', function() {
+    const groundingTechniqueBtn = document.getElementById('ground-technique-btn');
+    const motivationBtn = document.getElementById('motivation-btn');
+    const distractionBtn = document.getElementById('distractions-btn');
+
+    groundingTechniqueBtn.addEventListener('click', function() {
+        generateMsg('ground-technique');
+    });
+
+    motivationBtn.addEventListener('click', function() {
+        generateMsg('motivation');
+    });
+
+    distractionBtn.addEventListener('click', function() {
+        generateMsg('distractions');
+    })
+})
