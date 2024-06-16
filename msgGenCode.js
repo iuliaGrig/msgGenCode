@@ -32,9 +32,21 @@ let generateMsg = type => {
     }
 
     const msg = getRandMsg(msgArr);
-    // alert(msg);
-    console.log(msg);
+ 
+    const descElement = document.querySelector(`${type}`).querySelector(`.desc`);
+    descElement.textContent = msg;
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('generator button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            let type = button.parentElement.parentElement.className;
+            generateMsg(type);
+        })
+    })
+})
 
 /*
 generateMsg('grounding technique');
