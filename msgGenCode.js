@@ -1,8 +1,8 @@
-const groundTechnique = ["Ice cube on wrist", "Drink fizzy drink or water", "Elastic on wrist", "54321 technique", "Get some fresh air", "Lay down on the floor"];
+const groundTechnique = ["Ice cube on wrist", "Drink fizzy drink or water", "Elastic on wrist", "54321 technique", "Get some fresh air", "Lay down on the floor","Take a cold AND hot shower", "Work out as hard as you can", "Meditate or yoga", "Eat a lime", "Spray a perfume, cologne, air spray or wear the skin cream you like", "Blast music in your ears", "Take a dip in really cold water. Can be a lake or a freezing bath", "Eat your favourite treat, cookie, snack"];
 
-const motivationWords = ["One will learn to lie if they are constantly punished for telling the truth.", "I am not afraid of storms, for I am learning how to sail my ship.", "The only person you should try to be better than is the person you were yesterday.", "You must have chaos within you to give birth to a dancing star.", "Feed your faith and your doubts will starve to death."];
+const motivationWords = ["One will learn to lie if they are constantly punished for telling the truth.", "I am not afraid of storms, for I am learning how to sail my ship.", "The only person you should try to be better than is the person you were yesterday.", "You must have chaos within you to give birth to a dancing star.", "Feed your faith and your doubts will starve to death.", "Nothing happens until something moves.", "Honest people don't hide their deeds.", "The more honest you can be with yourself, the less of a chance your feelings will get hurt.", "Whoever lives for the sake of combating an enemy has an interest in the enemy's staying alive."];
 
-const distract = ["Watch Breaking Bad", "Code", "Take Buddy for a walk", "Blast music", "Continue the \'Guilty x34\' song", "Practice the bass"]
+const distract = ["Watch Breaking Bad", "Code", "Take Buddy for a walk", "Blast music", "Continue the \'Guilty x34\' song", "Practice the bass", "Research and find new good distractions", "If you feel like crying, let it out", "Play an action video game, a quick paced game", "Lift the heaviest lifts you can weight, try holding as many things as possible", "Count backwards from 100 by 7", "Name something backwards, letter-by-letter. Practice for at least a few minutes.", "Create a game where you pick a category. From each category, you name as many things or items as possible. Like, cereals: 'Cheerios', 'Cinnamon Toast Crunch', 'Combex', 'Capt\'n Crunch', 'Nesquik', 'Frosted Flakes', etc."]
 
 
 let getRandMsg = arr => {
@@ -16,10 +16,10 @@ let generateMsg = type => {
     let msgArr;
 
     switch(type) {
-        case 'grounding technique':
+        case 'grounding-technique':
             msgArr = groundTechnique;
             break;
-        case 'motivational words':
+        case 'motivational-words':
             msgArr = motivationWords;
             break;
         case 'distractions':
