@@ -1,6 +1,9 @@
 # Distress Tolerance Help
 =============================================
 ## Types of tools
-- Grounding Techniques
-- Motivational Words
-- Distractions
+- Grounding Techniques:
+    -Grounding technique generator;
+- Motivational Words:
+    -Motivational words generator;
+- Distractions:
+    -Distraction ideas generator;
