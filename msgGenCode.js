@@ -36,5 +36,7 @@ let generateMsg = type => {
     console.log(msg);
 }
 
+/*
 generateMsg('grounding technique');
 generateMsg('motivational words');
+*/
