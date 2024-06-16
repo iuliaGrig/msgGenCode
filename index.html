@@ -6,7 +6,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <script src="https://kit.fontawesome.com/d6d299e60b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="index.css"/>
-        <script src="msgGenCode.js" defer></script>
     </head>
 
     <body>
@@ -51,9 +50,14 @@
 
                 <article class="generator">
                     <p class="desc"></p>
-                    <button onclick="generateMsg('distractions')">Random</button>
+                    <p>
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <button onclick="generateMsg('distractions')">Random</button>
+                    </p>
                 </article>
             </section>
+        
+<br>
 
             <section class="numbers">
                 <header>
@@ -69,6 +73,8 @@
                     </ul>
                 </article>
             </section>
+
+            <script src="msgGenCode.js" defer></script>
         </main>
     </body>
 
