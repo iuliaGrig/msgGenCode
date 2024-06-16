@@ -30,23 +30,7 @@ let generateMsg = type => {
             console.log("Please specify a valid message type: grounding technique, motivational words or distractions")
             return;
     }
-
-    const msg = getRandMsg(msgArr);
- 
-    const descElement = document.querySelector(`${type} .desc`);
-    descElement.textContent = msg;
 }
-
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('generator button');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            let type = button.parentElement.parentElement.className;
-            generateMsg(type);
-        })
-    })
-})
 
 /*
 generateMsg('grounding technique');
