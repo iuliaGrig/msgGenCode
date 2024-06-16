@@ -1,7 +1,7 @@
 button {
-    background-color: "#209d";
+    background-color: #D9D5D2;
     border: solid 1px black;
-    color: lightgrey;
+    color: #1C3059;
     text-align: center;
     display: inline-block;
     cursor: pointer;
@@ -9,4 +9,10 @@ button {
 
 .desc {
     border: solid 1px #152340;
+    display: inline-block;
+}
+
+.button {
+    display: inline-block;
+    color: #1C3059;
 }
