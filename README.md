@@ -11,4 +11,4 @@
 
     Distraction ideas generator;
 
-### Some Numbers and Websites to Check Out for More Urgent Times
+### Some Numbers and Websites to Check Out for More Urgent Moments
