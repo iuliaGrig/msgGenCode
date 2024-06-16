@@ -33,7 +33,11 @@ let generateMsg = type => {
     const msg = getRandMsg(msgArr);
 
     const descElement = document.querySelector(`.${type} .generator .desc`);
-    descElement.textContent = msg;
+    if (descElement) {
+        descElement.textContent = msg;
+    } else {
+        console.error(`Desc element not found for type: ${type}`);
+    }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
