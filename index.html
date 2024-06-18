@@ -6,11 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <script src="https://kit.fontawesome.com/d6d299e60b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="index.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <main>
-            <header>
+            <header class="title">
                 <h1>Distress Tolerance Help</h1>
                 <p>It can get hard sometimes, that's why it's important to have something to rely on, that's also easily accessible!</p>
             </header>
@@ -23,8 +26,7 @@
                 <article class="generator">
                     <p class="desc"></p>
                     <p class="button">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <button id="ground-technique-btn" onclick="generateMsg('grounding technique')">Random</button>
+                        <i class="fa-solid fa-arrows-rotate"></i> <button id="ground-technique-btn" onclick="generateMsg('grounding technique')">Random</button>
                     </p>
                 </article>
             </section>
@@ -37,8 +39,7 @@
                 <article class="generator">
                     <p class="desc"></p>
                     <p class="button">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <button id="motivation-btn" onclick="generateMsg('motivational words')">Random</button>
+                        <i class="fa-solid fa-arrows-rotate"></i> <button id="motivation-btn" onclick="generateMsg('motivational words')">Random</button>
                     </p>
                 </article>
             </section>
@@ -51,8 +52,7 @@
                 <article class="generator">
                     <p class="desc"></p>
                     <p class="button">
-                        <i class="fa-solid fa-arrows-rotate"></i>
-                        <button id="distractions-btn" onclick="generateMsg('distractions')">Random</button>
+                        <i class="fa-solid fa-arrows-rotate"></i> <button id="distractions-btn" onclick="generateMsg('distractions')">Random</button>
                     </p>
                 </article>
             </section>
@@ -76,11 +76,11 @@
 
             <script src="msgGenCode.js" defer></script>
         </main>
-    </body>
 
-    <footer>
-        <aside>
-            <p>&copy Distress Tolerance Help</p><p>Made with <i class="fa-regular fa-heart"></i> by Iulia Grigore in MTL</p>
-        </aside>
-    </footer>
+        <footer>
+            <aside>
+                <p>&copy Distress Tolerance Help</p><p>Made with <i class="fa-regular fa-heart"></i> by Iulia Grigore in MTL</p>
+            </aside>
+        </footer>
+    </body>
 </html>
