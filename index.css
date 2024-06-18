@@ -1,18 +1,89 @@
+body {
+    display: flex;
+    font-family: "Oswald", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.generator {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+.desc {
+    display: flex;
+    padding: 5px;
+    text-align: left;
+    font-size: 1.25em;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    color: #1C3059;
+    border: solid 0.5px #1C3059;
+    padding: none;
+    align-items: center;
+    background-color: #152340;
+    cursor: pointer;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+}
+
 button {
     background-color: #D9D5D2;
-    border: solid 1px black;
+    border: solid 0.5px black;
     color: #1C3059;
     text-align: center;
     display: inline-block;
     cursor: pointer;
 }
 
-.desc {
-    border: solid 1px #152340;
-    display: inline-block;
+.button i {
+    margin: 0px 5px;
 }
 
-.button {
-    display: inline-block;
-    color: #1C3059;
+i {
+    color: #D9D5D2;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin:  0.75 0.6rem;
 }
