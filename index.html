@@ -12,13 +12,13 @@
     </head>
 
     <body>
-        <main>
+        <main role="main">
             <header class="title">
                 <h1>Distress Tolerance Help</h1>
                 <p>It can get hard sometimes, that's why it's important to have something to rely on, that's also easily accessible!</p>
             </header>
 
-            <section class="ground-technique">
+            <section class="ground-technique" role="region" aria-labelledby="ground-technique-heading">
                 <header>
                     <h2>Grounding Techniques</h2>
                 </header>
@@ -26,12 +26,14 @@
                 <article class="generator">
                     <p class="desc"></p>
                     <p class="button">
-                        <i class="fa-solid fa-arrows-rotate"></i> <button id="ground-technique-btn" onclick="generateMsg('grounding technique')">Random</button>
+                        <i class="fa-solid fa-arrows-rotate"></i> <button id="ground-technique-btn" onclick="generateMsg('grounding technique')" aria-label="generate random grounding technique">Random</button>
                     </p>
                 </article>
             </section>
+
 <hr class="divider">
-            <section class="motivation">
+
+            <section class="motivation" aria-labelledby="motivation-words-heading">
                 <header>
                     <h2>Motivational Words</h2>
                 </header>
@@ -39,12 +41,14 @@
                 <article class="generator">
                     <p class="desc"></p>
                     <p class="button">
-                        <i class="fa-solid fa-arrows-rotate"></i> <button id="motivation-btn" onclick="generateMsg('motivational words')">Random</button>
+                        <i class="fa-solid fa-arrows-rotate"></i> <button id="motivation-btn" onclick="generateMsg('motivational words')" aria-label="generate random motivational words">Random</button>
                     </p>
                 </article>
             </section>
+
 <hr class="divider">
-            <section class="distractions">
+
+            <section class="distractions" aria-labelledby="distractions-heading">
                 <header>
                     <h2>Distractions</h2>
                 </header>
@@ -52,14 +56,14 @@
                 <article class="generator">
                     <p class="desc"></p>
                     <p class="button">
-                        <i class="fa-solid fa-arrows-rotate"></i> <button id="distractions-btn" onclick="generateMsg('distractions')">Random</button>
+                        <i class="fa-solid fa-arrows-rotate"></i> <button id="distractions-btn" onclick="generateMsg('distractions')" aria-label="generate random Distractions">Random</button>
                     </p>
                 </article>
             </section>
         
 <hr class="divider">
 
-            <section class="numbers">
+            <section class="numbers" role="region">
                 <header>
                     <h2>Some Numbers to Call and Websites to Check Out</h2>
                 </header>
@@ -93,7 +97,7 @@
             <script src="msgGenCode.js" defer></script>
         </main>
 <hr class="divider">
-        <footer>
+        <footer role="contentinfo">
             <aside>
                 <p>&copy Distress Tolerance Help</p><p>Made with <i class="fa-regular fa-heart"></i> by Iulia Grigore in MTL</p>
             </aside>
