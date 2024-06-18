@@ -147,3 +147,17 @@ a:hover {
     padding: 0px;
     margin: 0px;
 }
+
+#num-sites .nums a {
+    font-style: normal;
+}
+
+.hidden-text {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    height: 1px;
+    margin: -1px;
+}
