@@ -122,6 +122,15 @@ a {
     font-style: italic;
 }
 
+a:visited {
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: inherit;
+}
+
 .numbers {
     display: flex;
     flex-direction: column;
@@ -130,4 +139,5 @@ a {
 #num-sites {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
