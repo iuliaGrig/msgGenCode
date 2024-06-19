@@ -106,7 +106,7 @@ aside {
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    margin:  0.75 0.6rem;
+    margin:  0.75rem 0.6rem;
 }
 
 .divider {
@@ -139,7 +139,7 @@ a:hover {
 #num-sites {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
